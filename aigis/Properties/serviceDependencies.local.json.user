@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2024-08-02T04:50:40.4169794Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2024-08-02T04:50:14.5780222Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "1ba15ef0-9a66-4460-b63b-efa5a949d52d"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Aigis_group"
+    }
+  }
+}

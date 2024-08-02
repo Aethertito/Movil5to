@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Paquetes";
+}
+
+<h2>Available Packages</h2>
+<div id="packages-container"></div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('https://localhost:7132/api/PackagesApi')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('packages-container');
+                    data.forEach(pkg => {
+                        const packageDiv = document.createElement('div');
+                        packageDiv.className = 'package-item';
+                        packageDiv.innerHTML = `
+                                    <h3>${pkg.paquete}</h3>
+                                    <p>${pkg.descripcion}</p>
+                                    <p>Precio: $${pkg.precio}</p>
+                                    <p>Contenido: ${pkg.contenido.join(', ')}</p>
+                                `;
+                        container.appendChild(packageDiv);
+                    });
+                })
+                .catch(error => console.error('Error fetching packages:', error));
+        });
+    </script>
+}
