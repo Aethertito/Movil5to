@@ -1,0 +1,76 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de backup de editores
+*.bak
+*.swp
+
+# Visual Studio
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.dbmdl
+*.log
+*.vspscc
+*.vssscc
+*.class
+
+# Paquetes NuGet
+*.nupkg
+# La siguiente línea evita que la carpeta NuGet sea ignorada si está en la solución
+!NuGet/
+
+# Paquetes de la carpeta de paquetes de Windows
+packages/
+# except build/, which is used as an MSBuild target.
+!packages/build/
+# Los siguientes dos son relevantes si tienes una solución centralizada de paquetes en una carpeta
+# y usas `enableNuGetPackageRestore` o `nuget restore`.
+# Ignorar archivos de configuración de paquetes que puedan variar de máquina a máquina.
+packages.config
+# Incluye paquetes que se restauran con NuGet en una carpeta centralizada.
+!packages/repositories.config
+
+# Rider
+.idea/
+*.sln.iml
+
+# Windows image file caches
+Thumbs.db
+
+# Carpetas de configuración de sistema
+AppData/
+local.settings.json
+
+# Logs
+*.log
+
+# Archivos de configuración de seguridad
+appsettings.json
+appsettings.Development.json
+secrets.json
+
+# Node.js
+node_modules/
+
+# Yarn
+yarn.lock
+
+# Logs
+logs/
+*.log
+
+# Dotenv
+.env
